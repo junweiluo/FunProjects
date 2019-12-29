@@ -1,4 +1,6 @@
 import numpy as np
+
+# Transform list of list as array
 arr = np.array([['.','.','.','.','.','.'],
                 ['.','0','0','.','.','.'],
                 ['0','*','0','0','.','.'],
@@ -9,9 +11,8 @@ arr = np.array([['.','.','.','.','.','.'],
                 ['.','0','0','.','.','.'],
                 ['.','.','.','.','.','.']])
 print(arr)
-#print(arr.T[:,::-1])
-#print('\n')
-#print(arr.T[:,::-1].T[:,::-1])
+
+# check if input is n times 90 degrees
 while True:
     try:
         YourInput = int(input("Please input the degree of rotation: "))
@@ -21,14 +22,17 @@ while True:
     except ValueError:
         print("Oops!  That was not valid number.  Try again...")
 
+# assign the original array to as working array
 WorkingArray = arr
 
 if YourInput >=0:
     for n in range(abs(int(YourInput/90))):
+        # Transpose array and flip
         WorkingArray = WorkingArray.T[:,::-1]
     print(WorkingArray)
 
 else:
     for n in range(abs(int(YourInput/90))):
+        # Transpose array and flip
         WorkingArray = WorkingArray.T[::-1,:]
     print(WorkingArray)
