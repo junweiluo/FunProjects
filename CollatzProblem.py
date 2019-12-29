@@ -1,4 +1,6 @@
 """
+Author: Junwei Luo
+
 Collatz probelm: any positive integer, if is even, then divide by two; if odd, times 3 plus 1.
 
 Continue doing last step, eventually any positive integer will get to 1.
