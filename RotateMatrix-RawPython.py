@@ -1,3 +1,5 @@
+# This is using raw python to solve this problem.
+
 OriginalGrid = [[".", ".", ".", ".", ".", "."],
         [".", "0", "0", ".", ".", "."],
         ["0", ".", "0", "0", ".", "."],
