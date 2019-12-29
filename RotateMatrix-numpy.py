@@ -1,3 +1,5 @@
+# Using numpy Transpose function to solve the problem. 
+
 import numpy as np
 
 # Transform list of list as array
